@@ -821,10 +821,18 @@
               }
             
               /* intro responsive */
+              /* .intro {
+                position: relative;
+                overflow: hidden;
+                padding-top: 9em;
+                padding-left: 3.2em;
+                margin-bottom: 25px;
+            } */
             
               .intro {
                 /* max-height: 300px !important; */
                 text-align: center;
+                padding-left: 1em;
                 display: flex;
                 height: 100%;
                 width: auto;
@@ -882,7 +890,15 @@
             
               .intro .left-container .button {
                 display: inline-block !important;
+             
               }
+              .button button {
+                padding-top: .6em;
+                padding-bottom: .6em;
+                padding-left: 2em;
+                padding-right: 2em;
+            }
+             
               /* About */
               .about {
                 text-align: center !important;
