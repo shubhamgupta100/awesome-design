@@ -197,7 +197,6 @@
         .about .about-content {
             display: inline-block;
             width: 100%;
-            max-width: 400px;
             margin-left: 5em;
         }
 
