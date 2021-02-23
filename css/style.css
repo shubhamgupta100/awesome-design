@@ -89,7 +89,7 @@
         .intro {
             position: relative;
             overflow: hidden;
-            padding-top: 9em;
+            padding-top: 3em;
             padding-left: 3.2em;
             margin-bottom: 25px;
         }
@@ -141,7 +141,7 @@
 
         .intro .top-circle {
             position: absolute;
-            top: -70%;
+            top: -80%;
             right: -30%;
             width: 800px;
             height: 800px;
@@ -731,11 +731,12 @@
             }
 
             .intro .left-circle {
+                
                 position: absolute;
                 top: 61%;
                 left: -9%;
-                width: 180px;
-                height: 180px;
+                width: 170px;
+                height: 170px;
                 border-radius: 50%;
                 background: linear-gradient(#c779d0, #4bc0c8);
             }
@@ -937,8 +938,8 @@
                 position: absolute;
                 z-index: -999;
                 left: -12%;
-                width: 200px;
-                height: 200px;
+                width: 160px;
+                height: 160px;
                 border-radius: 50%;
                 background: linear-gradient(#c779d0, #4bc0c8);
             }
@@ -1068,13 +1069,30 @@
                 padding: 20px 0 !important;
             }
 
-            .footer .logo-about,
-            .footer .contact,
+            .footer .logo-about,           
             .footer .connect-with-us {
                 display: block;
                 width: 100%;
-                margin-bottom: 10px;
+                margin-bottom: 10px;      
                 text-align: center;
+            }
+            .connect-with-us p{
+                width: 70%;
+                position: relative;
+                margin: auto;
+            }
+            .footer .contact{
+                display: flex;
+                flex-direction: column;
+                width: 35%;
+                position: relative;
+                margin: auto;
+            }
+            .contact .con{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
             }
 
             .footer .links a {

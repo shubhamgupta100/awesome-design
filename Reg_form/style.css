@@ -14,6 +14,17 @@
             font-size: 1.1em;
         }
 
+        .form-items{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-bottom: 10px !important;
+
+        }
+        .form__item{
+            padding-bottom: 10px !important;
+        }
+
         .form h1 {
             font-size: 1.2em;
             font-weight: 600;
@@ -40,19 +51,19 @@
 
         .form__label {
             font-weight: 600;
-            padding: 10px 0;
         }
 
         .form__input {
             -webkit-appearance: none;
             width: 100%;
-            padding: 0.6em;
+            padding: 0.4em;
             font-size: 1em;
             font-family: 'Abel' !important;
             outline: none;
             border: 1px solid #dddddd;
             border-radius: 4px;
             background: #f9f9f9;
+            min-width: 450px;
             transition: background 0.25s, border-color 0.25s, color 0.25s;
         }
 
@@ -64,38 +75,28 @@
             color: #bbbbbb;
         }
 
-        .form__input--error {
-            color: #d50000;
-            background: #fff8f8;
-            border-color: #d50000;
-        }
-
-        .form__input--error::placeholder {
-            color: #ffbfbf;
-        }
-
-        .form__error {
-            padding-top: 10px;
-            color: #d50000;
-            font-size: 0.9em;
-            visibility: hidden;
-        }
-
-        .form__input--error+.form__error {
-            visibility: visible;
-        }
-
         .form__input--small {
+            -webkit-appearance: none;
             width: 100%;
+            padding: 0.4em;
+            font-size: 1em;
+            font-family: 'Abel' !important;
+            outline: none;
+            border: 1px solid #dddddd;
+            border-radius: 4px;
+            background: #f9f9f9;
+            transition: background 0.25s, border-color 0.25s, color 0.25s;
         }
 
-        textarea.form__input {
-            resize: none;
-            min-height: 200px;
+        .form__input--small:focus {
+            background: #ffffff;
+        }
+
+        .form__input--small::placeholder {
+            color: #bbbbbb;
         }
 
         .form__btn {
-            font-family: "Source Sans Pro", sans-serif;
             font-weight: 600;
             font-size: 1.1em;
             padding: 10px 16px;
@@ -130,11 +131,6 @@
             font-size: 1em;
             width: 100%;
             border-radius: 4px;
-
-        }
-
-        .label {
-            padding: 15px 0 !important;
         }
 
         /* Remove IE arrow */
@@ -143,7 +139,7 @@
         }
 
         .select-one {
-            margin-bottom: 20px;
+            margin-bottom: 12px;
         }
 
         /* Custom Select */
@@ -151,11 +147,12 @@
             position: relative;
             display: flex;
             width: 100%;
-            height: 3em;
+            height: 2.7em;
             line-height: 3;
             background: #f9f9f9;
             overflow: hidden;
             border-radius: .25em;
+            min-width: 450px;
         }
 
         /* Arrow */
@@ -164,7 +161,7 @@
             position: absolute;
             top: 0;
             right: 0;
-            padding: 0 1em;
+            padding: 0 .7em;
             background: #f9f9f9;
             cursor: pointer;
             pointer-events: none;
@@ -178,6 +175,39 @@
             color: #f39c12;
         }
 
+        @media screen and (max-width:1020px) {
+            .form__input {
+                min-width: 260px;             
+            }
+
+            .select {
+                min-width: 260px;
+            }
+        }
+
+        @media screen and (max-width:770px) {
+            .form__input {
+                min-width: 200px;             
+            }
+
+            .select {
+                min-width: 200px;
+            }
+        }
+
+        @media (min-width:500px) and (max-width:770px) {
+            .form__input {
+                min-width: 100px !important;
+            }
+
+            .select {
+                min-width: 210px !important;
+                padding-right: 10px !important;
+            }
+            
+        }
+
+
         @media screen and (max-width:500px) {
             body {
                 padding: 0 !important;
@@ -186,6 +216,24 @@
 
             .form__title h1 {
                 font-size: 1em !important;
+            }
 
+            .form-items {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .form__input {
+                width: 100%;              
+            }
+
+            .select {
+                width: 100%;
             }
         }
+
+        #require{
+            color: rgb(40, 228, 23);
+            font-weight: 900;
+        }
+      
