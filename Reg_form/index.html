@@ -50,6 +50,27 @@
                         Your Name must be 3-20 characters long and should not contain number
                     </small>
                 </div>
+
+                <div class="form__item">
+                    <label for="mobNo" class="form__label">Mobile No</label>
+                    <input type="text" class=" form__input form-control" name="Telephone" id="mob_no"
+                        placeholder="Enter your Mob No...." required>
+                    <small id="phonevalid" class="form-text text-muted invalid-feedback">
+                        Your phone number must be 10 digit long
+                    </small>
+                </div>
+            </div>
+
+            <div class="form__item">
+                <label for="email" class="form__label">Email</label>
+                <input type='text' name='EMail' class="form__input--small form-control" id="Email"
+                    placeholder="Enter your email.." required>
+                <small id="emailvalid" class="form-text text-muted invalid-feedback">
+                    Your email must be a valid email
+                </small>
+            </div>
+
+            <div class="form-items">
                 <div class="form__item">
                     <label for="collegeName" class="form__label">College Name</label>
                     <input type="text" class="form__input form-control" name="CName " id="college_name"
@@ -58,18 +79,7 @@
                         College/School Name should contain alphabate only
                     </small>
                 </div>
-            </div>
 
-            <div class="form__item">
-                <label for="mobNo" class="form__label">Mobile No</label>
-                <input type="text" class=" form__input--small form-control" name="Telephone" id="mob_no"
-                    placeholder="Enter your Mob No...." required>
-                <small id="phonevalid" class="form-text text-muted invalid-feedback">
-                    Your phone number must be 10 digit long
-                </small>
-            </div>
-
-            <div class="form-items">
                 <div class="form__item">
                     <label for="location" class="form__label">College City</label>
                     <input type="text" class="form__input form-control" name="Address" id="college_location"
@@ -79,14 +89,7 @@
                     </small>
                 </div>
 
-                <div class="form__item">
-                    <label for="email" class="form__label">Email</label>
-                    <input type='text' name='EMail' class="form__input form-control" id="Email"
-                        placeholder="Enter your email.." required>
-                    <small id="emailvalid" class="form-text text-muted invalid-feedback">
-                        Your email must be a valid email
-                    </small>
-                </div>
+              
             </div>
 
             <div class="form-items">
@@ -108,7 +111,7 @@
                     </div>
                 </div>
 
-                <div class="select-one">
+                <!-- <div class="select-one">
                     <div class="label">
                         <label for="course" class="form__label">Year Of Completion</label>
                     </div>
@@ -160,10 +163,19 @@
                             <option value="41">2030</option>
                         </select>
                     </div>
+                </div> -->
+           
+                <div class="form__item">
+                    <label for="yearCompletion" class="form__label">Year Of Completion</label>
+                    <input type="text" class=" form__input form-control" name="yearComp" id="year_completion"
+                        placeholder="Year of Completion/expected year of compl..." required>
+                    <small id="yearvalid" class="form-text text-muted invalid-feedback">
+                        completion/expected completion year should be number of 4digit
+                    </small>
                 </div>
             </div>
 
-            <input type="checkbox" name="terms" id="term" onchange="activateButton(this)" required> I Agree Terms &
+            <input type="checkbox" name="terms" id="term"  required> I Agree Terms &
             Coditions
 
             <div class="form__item">
