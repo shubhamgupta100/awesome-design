@@ -18,11 +18,10 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            padding-bottom: 10px !important;
 
         }
         .form__item{
-            padding-bottom: 10px !important;
+            padding-bottom: 5px !important;
         }
 
         .form h1 {
@@ -67,6 +66,20 @@
             transition: background 0.25s, border-color 0.25s, color 0.25s;
         }
 
+        .form__inputx {
+            -webkit-appearance: none;
+            width: 100%;
+            padding: 0.4em;
+            font-size: 1em;
+            font-family: 'Abel' !important;
+            outline: none;
+            border: 1px solid #dddddd;
+            border-radius: 4px;
+            background: #f9f9f9;
+            min-width: 402px;
+            transition: background 0.25s, border-color 0.25s, color 0.25s;
+        }
+
         .form__input:focus {
             background: #ffffff;
         }
@@ -102,15 +115,15 @@
             padding: 10px 16px;
             margin: 10px 0;
             color: #ffffff;
-            background: #14b64a;
-            border: 2px solid #0fa942;
+            background: rgb(253, 44, 89);
+            border: 2px solid rgb(253, 44, 89);
             border-radius: 5px;
             cursor: pointer;
             outline: none;
         }
 
         .form__btn:active {
-            background: #0fa942;
+            background: rgb(253, 44, 89);
         }
 
         /* Reset Select */
@@ -161,7 +174,7 @@
             position: absolute;
             top: 0;
             right: 0;
-            padding: 0 .7em;
+            padding: 0 .6em;
             background: #f9f9f9;
             cursor: pointer;
             pointer-events: none;
@@ -179,25 +192,39 @@
             .form__input {
                 min-width: 260px;             
             }
+            .form__inputx{
+                min-width: 210px;  
+
+            }
 
             .select {
                 min-width: 260px;
             }
+        
         }
 
         @media screen and (max-width:770px) {
             .form__input {
                 min-width: 200px;             
             }
+            .form__inputx{
+                min-width: 150px;  
+
+            }
 
             .select {
                 min-width: 200px;
             }
+
         }
 
         @media (min-width:500px) and (max-width:770px) {
             .form__input {
                 min-width: 100px !important;
+            }
+            .form__inputx{
+                min-width: 50px;  
+
             }
 
             .select {
@@ -226,14 +253,37 @@
             .form__input {
                 width: 100%;              
             }
+            .form__inputx{
+               width: 100% !important;
+            }
+           
 
             .select {
                 width: 100%;
             }
+
         }
 
         #require{
-            color: rgb(40, 228, 23);
+            color: rgb(253, 44, 89);
             font-weight: 900;
         }
+        .formNo{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .x{
+            display: flex;
+            flex-direction: row;
+        }
+        .x select{
+            width: 50px;
+            height: 2.6em !important;
+            border-radius: none !important;
+            margin-right: 5px !important;
+           flex-grow: 2 !important;
+        }
       
+     

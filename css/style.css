@@ -92,6 +92,7 @@
             padding-top: 3em;
             padding-left: 3.2em;
             margin-bottom: 25px;
+            min-height: 710px;
         }
 
         .main-container {
@@ -164,9 +165,9 @@
         .intro .left-circle {
             position: absolute;
             top: 65%;
-            left: -9%;
-            width: 200px;
-            height: 200px;
+            left: -10%;
+            width: 250px;
+            height: 250px;
             border-radius: 50%;
             background: linear-gradient(#c779d0, #4bc0c8);
         }
@@ -175,7 +176,7 @@
         .about {
             position: relative;
             overflow: hidden;
-            min-height: 540px;
+            min-height: 700px;
             margin-bottom: 50px;
             top: 0;
 
@@ -200,7 +201,7 @@
 
         .about .about-circle {
             position: absolute;
-            top: 35%;
+            top: 45%;
             right: -10%;
             width: 300px;
             height: 300px;
@@ -364,6 +365,9 @@
             margin: auto;
         }
 
+        #teamSection {
+            margin-bottom: 12%;
+        }
         .team-section .heading {
             font-size: 40px;
             color: rgb(253, 44, 89);
@@ -453,6 +457,7 @@
                 padding-top: 7em;
                 padding-left: 3.2em;
                 margin-bottom: 25px;
+                min-height: 600px;
             }
 
             .main-container {
@@ -612,6 +617,9 @@
                 position: relative;
                 margin: auto;
             }
+            #teamSection{
+                margin-bottom: 5%;
+            }
 
             .team-section .heading {
                 font-size: 1.8em;
@@ -675,6 +683,9 @@
             }
 
             /* Intro section */
+            .intro{
+                min-height: 440px;
+            }
 
 
             .main-container {
@@ -809,6 +820,12 @@
                 font-size: 16px !important;
                 margin-top: 10px;
             }
+            .footer .logo-about img {
+                width: 180px;
+            }
+            .footer .links a {
+                padding-right: 6px;
+            }
 
         }
 
@@ -916,6 +933,7 @@
                 padding-left: 1em;
                 display: flex;
                 height: 100%;
+                min-height: 500px;
                 width: auto;
                 flex-direction: column;
                 justify-content: space-around;
@@ -1096,7 +1114,10 @@
             }
 
             .footer .links a {
-                padding-right: 10px;
+                padding-right: 6px;
+            }
+            .footer .logo-about img {
+                width: 180px;
             }
             /* Team section */
 
