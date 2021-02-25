@@ -23,12 +23,10 @@
             <a href="/">
                 <img src="image/legalshala.png" alt="logo">
             </a>
-
             <button id="submenu" onclick="showMenu(event)">
                 <span></span>
                 <span></span>
                 <span></span>
-
             </button>
             <ul class="nav-items">
                 <li>
@@ -38,10 +36,10 @@
                     <a href="#aboutSection">Brochure</a>
                 </li>
                 <li>
-                    <a href="#banner">FAQ</a>
+                    <a href="#">FAQ</a>
                 </li>
                 <li>
-                    <a href="#contact">Collaborate</a>
+                    <a href="#colaborate">Collaborate</a>
                 </li>
             </ul>
             <ul class="get-started-button">
@@ -125,7 +123,6 @@
         </div>
     </section>
 
-
     <!-- about section  -->
     <section class="about" id="aboutSection">
         <div class="container main-container-about">
@@ -152,7 +149,23 @@
         <div class="about-circle"></div>
     </section>
 
-    <!-- Banner -section -->
+    <!-- colaboration section -->
+    <section class="slider-container" id="colaborate">
+        <div class="heading">
+            <h1>
+                Our Collaboration
+            </h1>
+        </div>
+        <div class="image-container">
+            <img class="slider-image" src="image/samsung1.png" alt="">
+            <img class="slider-image" src="image/ibm.png" alt="">
+            <img class="slider-image" src="image/infosys.png" alt="">
+            <img class="slider-image" src="image/paytm.png" alt="">
+            <img class="slider-image" src="image/tvs.png" alt="">
+        </div>
+    </section>
+
+    <!-- Banner section -->
     <section id="banner">
         <div class="banner">
             <h1>Analytics Made Easy</h1>
@@ -163,24 +176,8 @@
             </div>
         </div>
     </section>
-
-    <!-- slider -->
-       <section class="slider-container ">
-        <div class="heading">
-            <h1>
-                Our Collaboration
-            </h1>
-        </div>
-        <div class="image-container">
-            <img class="slider-image" src="image/samsung1.png" alt="" >
-            <img class="slider-image" src="image/ibm.png" alt="" >
-            <img class="slider-image" src="image/infosys.png" alt="">
-            <img class="slider-image" src="image/paytm.png" alt="" >
-            <img class="slider-image" src="image/tvs.png" alt="" >        
-        </div>
-       </section>   
-    
-       <section class="footer" id="contact">
+    <!-- Footer section -->
+    <section class="footer" id="contact">
         <div class="logo-about">
             <div class="main">
                 <div class="logo">
@@ -237,7 +234,6 @@
         </div>
     </section>
 
-
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -249,24 +245,16 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script>
-
         function showMenu(event) {
-
             event.preventDefault();
-
             let element = document.getElementById('header');
-
             if (element.classList.contains('active')) {
                 element.className = "";
             } else {
                 element.className = "active";
             }
-
-
         }
-
     </script>
-
 </body>
 
 </html>
