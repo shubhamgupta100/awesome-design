@@ -427,4 +427,6 @@ button:hover {
       {
           zoom: 70%;
       }
+
+      body {-webkit-print-color-adjust: exact;}
 }
