@@ -6,7 +6,7 @@
 }
 
 .print-area {
-    width: 80%;
+    width: 90%;
     margin: 20px auto;
 }
 
@@ -43,12 +43,12 @@
 
 .header-text {
     color: white;
-    width: 60%;
+    width: 70%;
     margin-left: auto;
 }
 
 .header-text h1 {
-    /* padding-top: 20px; */
+    padding-right: 10px;
     font-size: 70px;
     font-weight: normal;
 }
@@ -416,4 +416,15 @@ button:hover {
     .print-area *{
        visibility: visible; 
     }
+
+    @page {
+        size: A4; /* landscape */
+        /* you can also specify margins here: */
+        /* Scale:60; */
+       
+      }
+      html
+      {
+          zoom: 70%;
+      }
 }
